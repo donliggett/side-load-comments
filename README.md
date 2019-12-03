@@ -1,2 +1,2 @@
-# side-load-comments
-A simple NY Times style comments widget.
+## Side Loading Comment Widget
+A simple NY Times style comments widget in vanilla javascript.

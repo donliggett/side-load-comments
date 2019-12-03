@@ -1,0 +1,43 @@
+#comments-toggle {
+    padding: 10px 20px;
+}
+  
+#comments-slider-container {
+    transition: ease-in-out 200ms;
+    position: absolute;
+    top: 0px;
+    right: -42%;
+    width: 40%;
+    background-color: #eee;
+    height: auto;
+    padding: 1%;
+    z-index: 10000;
+    overflow-y: scroll;
+}
+#comments-slider-container #comments-close {
+    background-color: #666;
+    color: #fff;
+    font-weight: 900;
+    border-width: 0;
+    padding: 4px 10px;
+}
+#comments-slider-container .comments-section {
+    border-width: 0;
+    width: 100%;
+    height: 100vmax;
+}
+#comments-slider-container.active {
+    right: 0;
+}
+  
+@media screen and (max-width: 600px) {
+    #comments-slider-container {
+      right: -100%;
+      width: 98%;
+    }
+    #comments-slider-container .comments-section {
+      border-width: 0;
+      width: 100%;
+      height: 100vmax;
+    }
+}  
